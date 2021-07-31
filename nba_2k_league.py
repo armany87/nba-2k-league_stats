@@ -111,7 +111,7 @@ with stats_container:
 
 	# 4 --- You import datasets like you always do with pandas
 	# 		if you'd like to import data from a database, you need to set up a database connection
-	data = pd.read_csv('nba2kleague_stats.csv')
+	data = pd.read_csv('streamlit template/nba2kleague_stats.csv')
    
 
 
