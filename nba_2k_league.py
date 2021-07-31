@@ -60,7 +60,10 @@ st.markdown(
     )
 #######################################
 
+@st.cache
+def get_data(filename)
 
+return data
 
 
 
