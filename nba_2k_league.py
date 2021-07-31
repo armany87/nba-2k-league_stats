@@ -53,7 +53,6 @@ with dataset:
 
 
 	nba2kleague_stats = pd.read.csv('data/nba2kleague_stats.csv')
-    st.write(nba2kleague_stats.head())
    
 
 
