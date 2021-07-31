@@ -3,6 +3,9 @@ import pandas as pd
 import streamlit as st
 
 
+header_container = st.beta_container()
+dataset = st.beta_container()
+
 
 st.markdown(
         f"""
@@ -26,16 +29,15 @@ st.markdown(
 
 @st.cache
 def get_data(filename):
-    data = pd.read_csv(filename)
+    league_data = pd.read_csv(filename)
 
-return data
-
-
+return league_data
 
 
 
-header_container = st.beta_container()
-stats_container = st.beta_container()	
+
+
+	
 
 
 
@@ -60,13 +62,13 @@ with header_container:
 
 
 
-with stats_container:
+with dataset:
 
 
 
 
 
-	data = get.data('data/nba2kleague_stats.csv')
+	league_data = get.data('data/nba2kleague_stats.csv')
    
 
 
