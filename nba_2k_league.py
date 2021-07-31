@@ -27,22 +27,6 @@ st.markdown(
     )
 
 
-@st.cache
-def get_data(filename):
-    league_data = pd.read_csv(filename)
-
-return league_data
-
-
-
-
-
-	
-
-
-
-
-
 with header_container:
 
 	
@@ -68,7 +52,8 @@ with dataset:
 
 
 
-	league_data = get.data('data/nba2kleague_stats.csv')
+	nba2kleague_stats = pd.read.csv('data/nba2kleague_stats.csv')
+    st.write(nba2kleague_stats.head())
    
 
 
